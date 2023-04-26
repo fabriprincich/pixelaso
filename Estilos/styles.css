@@ -1,0 +1,217 @@
+*{
+    margin: 0 0.13rem 0 0.13rem;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.cuerpo{
+    background-color: #ffd88a;
+}
+
+.titulo{
+    /*margin-left: 4rem;*/
+    margin-top: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffbf3c;
+}
+
+.logo {
+    display: flex;
+    
+}
+
+.logo img{
+    height: 55px;
+    margin-top: 10px;
+}
+
+/* menu desplegable */
+ 
+.navegacion{
+    width: 100%auto;
+    margin-top: 20px;
+    background: #ffbf3c;
+}
+
+.navegacion ul{
+    list-style: none;
+    justify-content: space-around;
+}
+
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+
+.menu > li > a{
+    display: block;
+    padding: 15px 15px;
+    color: #000000;
+    font-size: large;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color: rgb(238, 87, 28);
+    transition: ease-in-out .15s;
+}
+
+.menu li a:hover::after{
+    color: rgb(0, 0, 0);
+    transition: all .15s;
+}
+
+.submenu{
+    position: absolute;
+    background: #3d3d3d;
+    width: 145%;
+    border-left: #000000 10px;
+    border-right: #000000 1px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    font: Cambria, Cochin, Georgia, Times, serif;
+    text-decoration: none;
+}
+
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* carrusellll
+#carrusel-caja {
+    -moz-animation: automatizacion 2s infinite linear;
+    -o-animation: automatizacion 2s infinite linear;
+    -webkit-animation: automatizacion 2s infinite linear;
+    animation: automatizacion 2s infinite linear;
+
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+
+    height: 500px;
+    width: 300%;
+}
+
+#carrusel-contenido {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: left;
+}
+
+.imagenes{
+    height: 500px;
+    width: 100%;
+}
+
+.carrusel-elemento {
+    float: left;
+    width: 33.333%;
+}
+
+@-moz-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: 0;
+    }
+
+    35% {
+        margin-left: -100%;
+    }
+
+    65% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    95% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+@-webkit-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: 0;
+    }
+
+    35% {
+        margin-left: -100%;
+    }
+
+    65% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    95% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: 0;
+    }
+
+    35% {
+        margin-left: -100%;
+    }
+
+    65% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    95% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+*/
