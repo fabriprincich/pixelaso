@@ -7,19 +7,21 @@
 }
 
 .cuerpo{
-    background-color: #ffd88a;
+    background-color: #dce0e6;
 }
 
 .titulo{
     /*margin-left: 4rem;*/
     margin-top: 20px;
     font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 1.3px;
 }
 
 header{
+    position: relative;
     display: flex;
     justify-content: space-between;
-    background-color: #ffbf3c;
+    background-color: #6894d6;
 }
 
 .logo {
@@ -36,13 +38,14 @@ header{
  
 .navegacion{
     width: 100%auto;
-    margin-top: 20px;
-    background: #ffbf3c;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #6894d6;
 }
 
 .navegacion ul{
     list-style: none;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .menu > li{
@@ -51,37 +54,39 @@ header{
 }
 
 .menu > li > a{
+    position: relative;
+    opacity: 0.85;
     display: block;
     padding: 15px 15px;
-    color: #000000;
+    letter-spacing: 0.7px;
+    color: #ffffff;
     font-size: large;
     text-decoration: none;
 }
 
 .menu li a:hover{
-    color: rgb(238, 87, 28);
-    transition: ease-in-out .15s;
-}
-
-.menu li a:hover::after{
-    color: rgb(0, 0, 0);
-    transition: all .15s;
+    opacity: 1;
+    background-color: #345b96;
+    width: 100%;
+    color: rgb(255, 224, 47);
+    transition: .15s;
 }
 
 .submenu{
     position: absolute;
-    background: #3d3d3d;
+    background: #345b96;
     width: 145%;
     border-left: #000000 10px;
     border-right: #000000 1px;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 1s;
+    transition:  ease-in-out opacity .15s;
 }
 
 .submenu li a{
     display: block;
     padding: 15px;
+    letter-spacing: 0.7px;
     color: white;
     font: Cambria, Cochin, Georgia, Times, serif;
     text-decoration: none;
@@ -92,12 +97,13 @@ header{
     opacity: 1;
 }
 
-/* carrusellll
+/*carrusel*/
+
 #carrusel-caja {
-    -moz-animation: automatizacion 2s infinite linear;
-    -o-animation: automatizacion 2s infinite linear;
-    -webkit-animation: automatizacion 2s infinite linear;
-    animation: automatizacion 2s infinite linear;
+    -moz-animation: automatizacion 7s infinite linear;
+    -o-animation: automatizacion 7s infinite linear;
+    -webkit-animation: automatizacion 7s infinite linear;
+    animation: automatizacion 7s infinite linear;
 
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -113,11 +119,29 @@ header{
     margin: 0 auto;
     overflow: hidden;
     text-align: left;
+    size: 500px;
+    justify-content: center;
+    align-items: center;
 }
 
-.imagenes{
-    height: 500px;
-    width: 100%;
+.preview-min{
+    height: 562.50px;
+    width: 1000px;
+}
+
+.preview-byw{
+    height: 562.50px;
+    width: 1000px;
+}
+
+.preview-action{
+    height: 562.50px;
+    width: 1000px;
+}
+
+.preview-nature{
+    height: 562.50px;
+    width: 1000px;
 }
 
 .carrusel-elemento {
@@ -180,9 +204,7 @@ header{
         margin-left: -200%;
     }
 
-    100% {
-        margin-left: 0;
-    }
+    
 }
 
 @keyframes automatizacion {
@@ -214,4 +236,3 @@ header{
         margin-left: 0;
     }
 }
-*/
