@@ -97,142 +97,24 @@ header{
     opacity: 1;
 }
 
-/*carrusel*/
+/*----------------------slider-------------------------*/
 
-#carrusel-caja {
-    -moz-animation: automatizacion 7s infinite linear;
-    -o-animation: automatizacion 7s infinite linear;
-    -webkit-animation: automatizacion 7s infinite linear;
-    animation: automatizacion 7s infinite linear;
-
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
-
-    height: 500px;
-    width: 300%;
-}
-
-#carrusel-contenido {
-    margin: 0 auto;
+/* .slider{
     overflow: hidden;
-    text-align: left;
-    size: 500px;
-    justify-content: center;
+    display: block;
+    size: 200px;
+} */
+
+.slider-inner{
+    display: flex;
     align-items: center;
+    flex-wrap: nowrap;
+    gap: 40px;
+    max-width: 1200px;
+    padding: 40px 40px;
+    transition: all 0.3s ease-in;
 }
 
-.preview-min{
-    height: 562.50px;
-    width: 1000px;
-}
-
-.preview-byw{
-    height: 562.50px;
-    width: 1000px;
-}
-
-.preview-action{
-    height: 562.50px;
-    width: 1000px;
-}
-
-.preview-nature{
-    height: 562.50px;
-    width: 1000px;
-}
-
-.carrusel-elemento {
-    float: left;
-    width: 33.333%;
-}
-
-@-moz-keyframes automatizacion {
-    0% {
-        margin-left: 0;
-    }
-
-    30% {
-        margin-left: 0;
-    }
-
-    35% {
-        margin-left: -100%;
-    }
-
-    65% {
-        margin-left: -100%;
-    }
-
-    70% {
-        margin-left: -200%;
-    }
-
-    95% {
-        margin-left: -200%;
-    }
-
-    100% {
-        margin-left: 0;
-    }
-}
-
-@-webkit-keyframes automatizacion {
-    0% {
-        margin-left: 0;
-    }
-
-    30% {
-        margin-left: 0;
-    }
-
-    35% {
-        margin-left: -100%;
-    }
-
-    65% {
-        margin-left: -100%;
-    }
-
-    70% {
-        margin-left: -200%;
-    }
-
-    95% {
-        margin-left: -200%;
-    }
-
-    
-}
-
-@keyframes automatizacion {
-    0% {
-        margin-left: 0;
-    }
-
-    30% {
-        margin-left: 0;
-    }
-
-    35% {
-        margin-left: -100%;
-    }
-
-    65% {
-        margin-left: -100%;
-    }
-
-    70% {
-        margin-left: -200%;
-    }
-
-    95% {
-        margin-left: -200%;
-    }
-
-    100% {
-        margin-left: 0;
-    }
+img{
+    width: 100%;
 }
