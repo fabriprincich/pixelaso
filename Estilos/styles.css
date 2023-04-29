@@ -98,23 +98,42 @@ header{
 }
 
 /*----------------------slider-------------------------*/
-
-/* .slider{
-    overflow: hidden;
-    display: block;
-    size: 200px;
-} */
-
 .slider-inner{
+    
     display: flex;
     align-items: center;
-    flex-wrap: nowrap;
-    gap: 40px;
-    max-width: 1200px;
+    gap: 2px;
+    max-width: 1300px;
     padding: 40px 40px;
     transition: all 0.3s ease-in;
 }
 
 img{
     width: 100%;
+    border-radius: 7px;
+    
+}
+
+.anterior, .siguiente{
+    width: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anterior img, .siguiente img{
+    width: 100%;
+}
+
+.slider-screen{
+    display: flex;
+    width: 120%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.slider-screen img{
+    width: 100%;
+     
 }
