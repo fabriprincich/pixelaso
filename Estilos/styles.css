@@ -137,3 +137,16 @@ img{
     width: 100%;
      
 }
+
+/* -----------preview----------- */
+
+.preview{
+    margin: 350px;
+    font-size: 70px;
+}
+
+/*------- pie-------- */
+
+.pie{
+    max-width: 50px;
+}
